@@ -5471,15 +5471,21 @@ TextureImporter:
       name: skatepark tileset kopio_220
       rect:
         serializedVersion: 2
-        x: 288
-        y: 16
+        x: 0
+        y: 96
         width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -6, y: 7}
+        - {x: -7, y: 6}
+        - {x: -7, y: 3}
+        - {x: -6, y: 2}
+        - {x: 8, y: 2}
+        - {x: 8, y: 7}
       tessellationDetail: 0
       bones: []
       spriteID: d186d3b00b5a1ee408b99958597c8d34
@@ -5492,6 +5498,79 @@ TextureImporter:
       name: skatepark tileset kopio_221
       rect:
         serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 7}
+        - {x: -8, y: 2}
+        - {x: 8, y: 2}
+        - {x: 8, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86396e2eff18a8a48b6ea03484050562
+      internalID: -762621921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatepark tileset kopio_222
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 7}
+        - {x: -8, y: 2}
+        - {x: 6, y: 2}
+        - {x: 7, y: 3}
+        - {x: 7, y: 6}
+        - {x: 6, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b597d376740a54d9e9dcb685a39d27
+      internalID: 1805040947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatepark tileset kopio_223
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b128af2fcf31b4b93396b3d1dded0c
+      internalID: 1557758437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skatepark tileset kopio_224
+      rect:
+        serializedVersion: 2
         x: 304
         y: 16
         width: 16
@@ -5503,14 +5582,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86396e2eff18a8a48b6ea03484050562
-      internalID: -762621921
+      spriteID: d29d2c4ee22bb8545b943ce6a0d2a0eb
+      internalID: 915343932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skatepark tileset kopio_222
+      name: skatepark tileset kopio_225
       rect:
         serializedVersion: 2
         x: 288
@@ -5524,14 +5603,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92b597d376740a54d9e9dcb685a39d27
-      internalID: 1805040947
+      spriteID: c501aec3480d0694da6058bdbc74db6e
+      internalID: -51737046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: skatepark tileset kopio_223
+      name: skatepark tileset kopio_226
       rect:
         serializedVersion: 2
         x: 304
@@ -5545,8 +5624,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b128af2fcf31b4b93396b3d1dded0c
-      internalID: 1557758437
+      spriteID: 2e6dcfdb759f15f4f93d626bd5c78964
+      internalID: -1123259901
       vertices: []
       indices: 
       edges: []
@@ -5569,6 +5648,7 @@ TextureImporter:
       skatepark tileset kopio_29: 632471817
       skatepark tileset kopio_46: 418541253
       skatepark tileset kopio_128: -2010328631
+      skatepark tileset kopio_225: -51737046
       skatepark tileset kopio_28: 1665994417
       skatepark tileset kopio_201: 867767928
       skatepark tileset kopio_25: 575624688
@@ -5755,6 +5835,7 @@ TextureImporter:
       skatepark tileset kopio_110: 2126977080
       skatepark tileset kopio_180: 1587466353
       skatepark tileset kopio_96: 283816479
+      skatepark tileset kopio_226: -1123259901
       skatepark tileset kopio_74: 2120233394
       skatepark tileset kopio_218: 719162310
       skatepark tileset kopio_63: 851685985
@@ -5772,6 +5853,7 @@ TextureImporter:
       skatepark tileset kopio_154: 1693650947
       skatepark tileset kopio_184: 596195893
       skatepark tileset kopio_131: 1400918595
+      skatepark tileset kopio_224: 915343932
       skatepark tileset kopio_13: -132371484
       skatepark tileset kopio_151: 923956707
       skatepark tileset kopio_170: 173519395
