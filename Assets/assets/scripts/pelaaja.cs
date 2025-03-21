@@ -42,8 +42,8 @@ public class pelaaja : MonoBehaviour
 
     public void Kick()
     {
-
-         rb.AddForce(transform.right * PotkuVoima, ForceMode2D.Impulse);
+        Debug.Log("Kick");
+        rb.AddForce(transform.right * (rend.flipX ? -1f : 1f)* PotkuVoima, ForceMode2D.Impulse);
         
     }
 
@@ -54,6 +54,9 @@ public class pelaaja : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        if(Input.GetKeyDown(KeyCode.Y))
         Kick();
 
         bool grounded = false;
@@ -62,8 +65,8 @@ public class pelaaja : MonoBehaviour
         bool hit2 = false;
         bool hit3 = false;
 
-        Debug.DrawRay(transform.GetChild(0).GetChild(1).position, Vector2.down * GroundRaycastSize, Color.red);
-        Debug.DrawRay(transform.GetChild(0).GetChild(0).position, Vector2.down * GroundRaycastSize, Color.red);
+       // Debug.DrawRay(transform.GetChild(0).GetChild(1).position, Vector2.down * GroundRaycastSize, Color.red);
+       // Debug.DrawRay(transform.GetChild(0).GetChild(0).position, Vector2.down * GroundRaycastSize, Color.red);
         Debug.DrawRay(transform.position, Vector2.down * GroundRaycastSize, Color.red);
         if (skating)
         {
@@ -88,7 +91,10 @@ public class pelaaja : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector2(horizontal * MovementSpeed, rb.velocity.y);
+        if(!skating)
+        {
+            rb.velocity = new Vector2(horizontal * MovementSpeed, rb.velocity.y);
+        }
         
 
         Anim.SetBool("walking", false);
@@ -123,7 +129,8 @@ public class pelaaja : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Anim.SetBool("skating", !Anim.GetBool("skating"));
+            skating = !skating;
+            Anim.SetBool("skating", skating);
             MovementSpeed = Anim.GetBool("skating") ? SkatingSpeed : WalkingSpeed;
             skateBoardCollider.SetActive(Anim.GetBool("skating"));
         }
